@@ -22,9 +22,16 @@ final class QueryBus{
 
   }
 
-  //association function
+  //load of query handlers
   public function ask(Query $query):?Result{
     return $this->handlers[$query->key()]->search($query);
+  }
+
+  //association function
+  public function load(QueryHandlerDictionary $dictionary):void{
+    foreach ($dictionary->handlers() as $handler) {
+      
+    }
   }
 
   //subscription of handlers

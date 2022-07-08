@@ -30,6 +30,15 @@ final class CommandBus{
     
   }
 
+  //loading of dictionary
+  public function load(CommandHandlerDictionary $dictionary):void{
+
+    foreach ($dictionary->handlers() as $handler) {
+      $this->add($handler);
+    }
+
+  }
+
   //subscribe new command handler
   public function add(CommandHandler $handler):void{
 
