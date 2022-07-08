@@ -8,6 +8,12 @@
             "CellFrameworkProject\\CQRS\\": "cqrs/"
         }
     },
+    "autoload-dev": {
+        "psr-4": {
+            "Test\\":"test",
+            "Mock\\":"mock"
+        }
+    },
     "authors": [
         {
             "name": "Bernardo Colorado Dubois",

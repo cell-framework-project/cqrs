@@ -7,10 +7,10 @@ use CellFrameworkProject\CQRS\Event\EventHandler;
 
 final class EventBus{
 
-  protected static $instance = null;
+  protected static self $instance;
   protected array $handlers = [];
 
-  public static function instanciate():self{
+  public static function create():self{
 
     if(!isset(self::$instance)){
       self::$instance = new self;

@@ -1,4 +1,7 @@
 # CQRS PACK
 
-
 ## COMMAND:
+
+## QUERY:
+
+## EVENT:

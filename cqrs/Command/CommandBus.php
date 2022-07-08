@@ -8,13 +8,13 @@ use CellFrameworkProject\CQRS\Command\CommandHandler;
 final class CommandBus{
 
   // singleton instance
-  protected static $instance = null;
+  protected static self $instance;
   
   //array of handlers
   protected array $handlers = [];
 
   //singleton creator function
-  public static function instanciate():self{
+  public static function create():self{
 
     if(!isset(self::$instance)){
       self::$instance = new self;
