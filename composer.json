@@ -1,0 +1,19 @@
+{
+    "name": "cell-framework-project/cqrs",
+    "description": "open library for creating cqrs architectures",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "CellFrameworkProject\\CQRS\\": "cqrs/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Bernardo Colorado Dubois",
+            "email": "bernardocoloradodubois.fsd@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {}
+}

@@ -1,0 +1,5 @@
+mock/*
+vendor/*
+test/*
+composer.lock
+index.php
